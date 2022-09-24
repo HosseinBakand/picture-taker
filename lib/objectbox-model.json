@@ -1,0 +1,92 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:116155010826914795",
+      "lastPropertyId": "1:633005806522767345",
+      "name": "PuzzleCombination",
+      "properties": [
+        {
+          "id": "1:633005806522767345",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:4411100918884665341",
+          "name": "images",
+          "targetId": "2:6151005907880350888"
+        }
+      ]
+    },
+    {
+      "id": "2:6151005907880350888",
+      "lastPropertyId": "2:497339508738205218",
+      "name": "PuzzleImage",
+      "properties": [
+        {
+          "id": "1:7644118267016718183",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:497339508738205218",
+          "name": "path",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:1003760889257007289",
+      "lastPropertyId": "4:7546169269742472939",
+      "name": "PuzzleLevel",
+      "properties": [
+        {
+          "id": "1:533626021620357464",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8843479974108140318",
+          "name": "order",
+          "type": 6
+        },
+        {
+          "id": "3:7079063000563051612",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "4:7546169269742472939",
+          "name": "isMatchUp",
+          "type": 1
+        }
+      ],
+      "relations": [
+        {
+          "id": "2:8848987698817841942",
+          "name": "combinations",
+          "targetId": "1:116155010826914795"
+        }
+      ]
+    }
+  ],
+  "lastEntityId": "3:1003760889257007289",
+  "lastIndexId": "0:0",
+  "lastRelationId": "2:8848987698817841942",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
